@@ -8,10 +8,17 @@
 }
 
 body {
+    background-image: url(pexels-ann-h-45017-1989821.jpg);
+    background-position: center;
     display: grid;
     place-items: center;
     height: 100vh;
     font-size: var(--font-body);
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    border: 2px solid rgb(255, 197, 88);
+    padding: 20px;
 }
 
 .grad--text {
@@ -22,10 +29,15 @@ body {
 }
 
 #app--core {
+    background-color: rgba(255, 166, 0, 0.555);
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 20px ;
+    padding: 20px;
     min-width: 20.3125rem;
     width: 33.75rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.575);
 }
 
 #todo--header {
@@ -34,6 +46,7 @@ body {
 
 #todo--form,
 #todo--footer {
+    
     flex: 0 0;
     height: 4rem;
     padding: var(--padding-y) var(--padding-x);
@@ -43,12 +56,16 @@ body {
     display: flex;
     gap: var(--gap);
     border-radius: .875rem;
-    border: 2px solid purple;
+    border: 2px solid  black;
     margin-bottom: 1.5rem;
+    box-shadow: 5px 5px 5px  rgb(243, 181, 65);
 }
 
 #tarefas {
+    border: 2px solid black;
+    border-radius: 30px;
     flex: 1 1;
+    font-size: 14px;
 }
 
 .tarefa--item {
@@ -78,6 +95,7 @@ body {
     font: inherit;
     width: 100%;
     border: none;
+    background: none;
 }
 
 #todo--footer {
@@ -90,4 +108,32 @@ body {
     border: none;
     background: none;
     font: inherit;
+}
+
+h1 {
+    font-size: 39px;
+    color: black;
+}
+
+.concluida h2 {
+    text-decoration: line-through;
+    color:#555;
+}
+
+.btn--filtro {
+    border:1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 80px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    
+} 
+
+.btn--filtro:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.445); 
+}
+
+.entrada--texto {
+    color:rgb(54, 167, 129)
 }
